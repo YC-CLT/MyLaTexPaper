@@ -1,0 +1,38 @@
+\documentclass[a4paper,12pt]{article}
+
+% 加载必要的包
+\usepackage{graphicx}  % 用于插入图片
+\usepackage{geometry}  % 用于设置页面边距
+\usepackage{eso-pic}   % 用于在页面上添加背景图片
+\usepackage{natbib}    % 用于参考文献管理
+
+% 设置页面边距
+\geometry{
+    margin=1in,  % 设置边距为1英寸
+    paper=a4paper
+}
+
+% 使用 eso-pic 包添加背景图片
+\AddToShipoutPictureBG{%
+    \put(0,0){\includegraphics[width=\paperwidth, height=\paperheight, keepaspectratio]{cover.jpg}}%
+}
+
+\begin{document}
+    % 第一页是封面
+    \thispagestyle{empty}  % 去掉页码
+    \null
+    \newpage
+    % 清除背景图片设置
+    \ClearShipoutPictureBG
+
+    \tableofcontents  % 生成目录
+
+    % 正文内容
+    \section{Introduction}
+    This is an example of citing references in LaTeX. The first reference is from a book \citep{ref1}. The second reference is from an article \citep{ref2}. The third reference is from an online source \citep{ref3}.
+
+    % 参考文献部分
+    \bibliographystyle{plainnat}  % 使用 plainnat 样式（与 natbib 兼容）
+    \bibliography{references}     % 引用 references.bib 文件
+
+\end{document}
