@@ -1,0 +1,31 @@
+# 编译生成的中间文件
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.out
+*.ps
+*.synctex.gz
+*.toc
+
+# 图像相关中间文件（如果使用某些图像处理功能）
+*.fls
+*.fdb_latexmk
+
+# 编译生成的 PDF 文件（可选，如果不需要追踪 PDF 文件的话）
+*.pdf
+
+# 如果使用了特定的 LaTeX 工具或包可能会生成的文件
+# 比如使用 minted 宏包生成的缓存文件
+_cache/
+
+# 文档编辑器临时文件（根据你的编辑器不同需要调整）
+*.swp
+*.swo
+*.~*
