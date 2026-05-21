@@ -1,0 +1,23 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Name(2023{\natexlab{a}})]{ref1}
+Author Name.
+\newblock \emph{Book Title}.
+\newblock Publisher Name, 2023{\natexlab{a}}.
+
+\bibitem[Name(2023{\natexlab{b}})]{ref2}
+Author Name.
+\newblock Article title.
+\newblock \emph{Journal Name}, 10:\penalty0 1--10, 2023{\natexlab{b}}.
+
+\bibitem[Name(2023{\natexlab{c}})]{ref3}
+Author Name.
+\newblock Web page title, 2023{\natexlab{c}}.
+\newblock URL \url{https://example.com}.
+
+\end{thebibliography}
